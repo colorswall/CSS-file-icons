@@ -6,6 +6,7 @@
   "main": "build/style.css",
   "scripts": {
     "dev": "npm run lint && webpack-dev-server --config webpack.dev.config.js --inline",
+    "build": "npm run lint && webpack --config webpack.config.js -p",
     "lint": "./node_modules/.bin/eslint js"
   },
   "repository": {
