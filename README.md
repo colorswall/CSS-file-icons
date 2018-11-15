@@ -26,7 +26,7 @@ Include 'css-file-icons.css' to html.
  // example: .fi.fi-doc
  ```
 
- ## Sizes
+## Sizes
  ```
 .fi.fi-size-sm // default
 .fi.fi-size-md
