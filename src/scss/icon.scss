@@ -7,7 +7,7 @@ $file_icon_text_color: #fff;
 $file_icon_font_size: 13px;
 $file_icon_lh: 1.5;
 
-.file-icon {
+.fi {
     width: $file_icon_width;
     height: $file_icon_height;
     padding: $file_icon_arrow 0 0;
@@ -17,6 +17,8 @@ $file_icon_lh: 1.5;
     cursor: pointer;
     box-sizing: border-box;
     font-family: sans-serif;
+    text-decoration: none;
+    display: block;
     &:before,
     &:after {
         position: absolute;
@@ -61,68 +63,3 @@ $file_icon_lh: 1.5;
         position: absolute;
     }
 }
-
-@mixin file-icon-color($class, $color) {
-    .extension-#{$class} {
-        &.file-icon {
-             &:before {
-                background-color: $color;
-             }
-             &:after {
-                border-left-color: lighten($color, 20%);
-             }
-             .file-icon-content {
-                background-color: $color;
-             }
-        }
-    }
-}
-
-@mixin file-icon-size($class, $width, $height, $arrow_h, $font_size) {
-    .size-#{$class} {
-        &.file-icon {
-            width: $width;
-            height: $height;
-            padding-top: $arrow_h;
-             &:before {
-                right: $arrow_h;
-             }
-             &:after {
-                border-top-width: $arrow_h;
-                border-left-width: $arrow_h;
-             }
-             .file-icon-content {
-                top: $arrow_h;
-                padding-top: #{$height - $font_size * $file_icon_lh - $arrow_h};
-                font-size: $font_size;
-             }
-        }
-    }
-}
-
-
-@include file-icon-color('doc', #2c3e50);
-@include file-icon-color('docx', #2980b9);
-@include file-icon-color('wpd', #e67e22);
-@include file-icon-color('html', #e34c26);
-@include file-icon-size('md', 36px*2, 46px*2, 10px*2, 13px*2);
-// #1abc9c
-// #2ecc71
-// #3498db
-// #9b59b6
-// #34495e
-// #16a085
-// #27ae60
-// #2980b9
-// #8e44ad
-// #2c3e50
-// #f1c40f
-// #e67e22
-// #e74c3c
-// #ecf0f1
-// #95a5a6
-// #f39c12
-// #d35400
-// #c0392b
-// #bdc3c7
-// #7f8c8d
