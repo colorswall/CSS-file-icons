@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/colorswall/CSS-file-icons/issues"
   },
-  "homepage": "https://github.com/colorswall/CSS-file-icons#readme",
+  "homepage": "https://colorswall.github.io/CSS-file-icons/",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^6.1.0",
