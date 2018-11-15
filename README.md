@@ -8,7 +8,7 @@ Pure CSS file icons for popular extensions
 [demo](https://colorswall.github.io/CSS-file-icons/)
 
 ## Usage
-Include 'css-file-icons.css' to html.
+Include `css-file-icons.css` to html.
 
 ## Example
 ```
@@ -33,3 +33,13 @@ Include 'css-file-icons.css' to html.
 .fi.fi-size-lg
 .fi.fi-size-x
  ```
+
+## SCSS Mixins
+#### New icon color
+```
+@mixin fi-color($class, $color, $text_color:$file_icon_text_color)
+```
+#### Icon size
+```
+@mixin fi-size($class, $width, $height, $arrow_h, $font_size)
+```

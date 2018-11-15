@@ -1,5 +1,5 @@
 // File icon Color
-@mixin fi-color($class, $color) {
+@mixin fi-color($class, $color, $text_color:$fi_text_color) {
     .fi-#{$class} {
         &.fi {
              &:before {
@@ -10,6 +10,7 @@
              }
              .fi-content {
                 background-color: $color;
+                color: $text_color;
              }
         }
     }
@@ -31,7 +32,7 @@
              }
              .fi-content {
                 top: $arrow_h;
-                padding-top: #{$height - $font_size * $file_icon_lh - $arrow_h};
+                padding-top: #{$height - $font_size * $fi_lh - $arrow_h};
                 font-size: $font_size;
              }
         }

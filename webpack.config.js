@@ -1,7 +1,7 @@
 const path = require('path');
 const commonConfig = require('./webpack.common.config');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const extractCSS = new ExtractTextPlugin('style.css');
+const extractCSS = new ExtractTextPlugin('css-file-icons.css');
 
 const output = {
     path: path.resolve(__dirname, 'build'),
