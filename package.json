@@ -1,6 +1,6 @@
 {
   "name": "css-file-icons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "css colors file extension icons",
   "style": "build/css-file-icons.css",
   "main": "build/css-file-icons.css",
