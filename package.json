@@ -1,6 +1,6 @@
 {
   "name": "css-file-icons",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "css colors file extension icons",
   "style": "build/css-file-icons.css",
   "main": "build/css-file-icons.css",
@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/colorswall/CSS-file-icons/issues"
   },
-  "homepage": "https://github.com/colorswall/CSS-file-icons#readme",
+  "homepage": "https://colorswall.github.io/CSS-file-icons/",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^6.1.0",
