@@ -12,6 +12,7 @@ Include `css-file-icons.css` to html or install via nom
 ```
 npm i css-file-icons --save
 ```
+include css file `css-file-icons.css` from folder `build`
 
 ## Example
 ```
