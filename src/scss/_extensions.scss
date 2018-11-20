@@ -36,6 +36,9 @@
 @include fi-color('java', #ea2c2e);
 @include fi-color('swift', #f32a20);
 @include fi-color('torrent', #55ac44);
-@include fi-color('php', #4F5B93);
+@include fi-color('php', #4f5b93);
 @include fi-color('hh', #505050);
-@include fi-color('go', #E0EBF5);
+@include fi-color('go', #e0ebf5, #000000);
+@include fi-color('py', #ffd542, #3472a3);
+@include fi-color('rss', #fd8b33);
+@include fi-color('rb', #a20d01);

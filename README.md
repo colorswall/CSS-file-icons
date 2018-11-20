@@ -8,7 +8,10 @@ Pure CSS file icons for popular extensions
 [demo](https://colorswall.github.io/CSS-file-icons/)
 
 ## Usage
-Include `css-file-icons.css` to html.
+Include `css-file-icons.css` to html or install via nom
+```
+npm i css-file-icons --save
+```
 
 ## Example
 ```
@@ -18,7 +21,7 @@ Include `css-file-icons.css` to html.
 ```
 
 ## File extensions
- Icons for files doc, docx, log, txt, wps, csv, dat, ppt, xml, mp3, wav, avi, mov, mp4, 3ds, max, gif, ai, svg, pdf, xls, xlsx, sql, exe, js, html, xhtml, css, asp, ttf, dll, 7z, zip, c, cs, java, swift, torrent, php, hh, go.
+ Icons for files doc, docx, log, txt, wps, csv, dat, ppt, xml, mp3, wav, avi, mov, mp4, 3ds, max, gif, ai, svg, pdf, xls, xlsx, sql, exe, js, html, xhtml, css, asp, ttf, dll, 7z, zip, c, cs, java, swift, torrent, php, hh, go, py, rss, rb.
 
  ```
  .fi.fi-*extension*
