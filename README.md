@@ -32,7 +32,9 @@ include css file `css-file-icons.css` from folder `build`
 
 ## Sponsors
 The following wonderful companies have sponsored CSS file icons
+<a href="https://opencollective.com/css-file-icons#backer" target="_blank"><img src="https://opencollective.com/static/images/become_sponsor.svg"></a>
 [Learn more about becoming a sponsor!](https://opencollective.com/css-file-icons#sponsor)
+<a href="https://opencollective.com/css-file-icons#sponsor" target="_blank"><img src="https://opencollective.com/static/images/become_backer.svg"></a>
 
 ## Sizes
  ```
