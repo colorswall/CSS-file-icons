@@ -3,7 +3,7 @@
 Pure CSS file icons for popular extensions
 
 ## Icons
-[<img src="https://raw.githubusercontent.com/colorswall/CSS-file-icons/master/src/images/icons.png" alt="CSS file icons" data-canonical-src="https://raw.githubusercontent.com/colorswall/CSS-file-icons/master/src/images/icons.png" width="330" height="100" />](https://colorswall.github.io/CSS-file-icons/)
+[<img src="https://raw.githubusercontent.com/colorswall/CSS-file-icons/master/src/images/icons.png" alt="CSS file icons" data-canonical-src="https://raw.githubusercontent.com/colorswall/CSS-file-icons/master/src/images/icons.png" width="721" height="241" />](https://colorswall.github.io/CSS-file-icons/)
 
 [demo](https://colorswall.github.io/CSS-file-icons/)
 
