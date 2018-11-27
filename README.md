@@ -3,12 +3,12 @@
 Pure CSS file icons for popular extensions
 
 ## Icons
-![CSS file icons](https://raw.githubusercontent.com/colorswall/CSS-file-icons/master/src/images/icons.png)
+[<img src="https://raw.githubusercontent.com/colorswall/CSS-file-icons/master/src/images/icons.png" alt="CSS file icons" data-canonical-src="https://raw.githubusercontent.com/colorswall/CSS-file-icons/master/src/images/icons.png" width="721" height="241" />](https://colorswall.github.io/CSS-file-icons/)
 
 [demo](https://colorswall.github.io/CSS-file-icons/)
 
 ## Usage
-Include `css-file-icons.css` to html or install via nom
+Include `css-file-icons.css` to html or install via npm
 ```
 npm i css-file-icons --save
 ```
@@ -29,6 +29,15 @@ include css file `css-file-icons.css` from folder `build`
  // where *extension* = file extension.
  // example: .fi.fi-doc
  ```
+
+## Sponsors
+The following wonderful companies have sponsored CSS file icons
+
+<a href="https://opencollective.com/css-file-icons#backer" target="_blank"><img src="https://opencollective.com/static/images/become_sponsor.svg"></a>
+
+[Learn more about becoming a sponsor!](https://opencollective.com/css-file-icons#sponsor)
+
+<a href="https://opencollective.com/css-file-icons#sponsor" target="_blank"><img src="https://opencollective.com/static/images/become_backer.svg"></a>
 
 ## Sizes
  ```
