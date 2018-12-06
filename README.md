@@ -1,6 +1,6 @@
 ## CSS file icons
 [![Backers on Open Collective](https://opencollective.com/CSS-file-icons/backers/badge.svg)](#backers)
- [![Sponsors on Open Collective](https://opencollective.com/CSS-file-icons/sponsors/badge.svg)](#sponsors) 
+ [![Sponsors on Open Collective](https://opencollective.com/CSS-file-icons/sponsors/badge.svg)](#sponsors)
 
 Pure CSS file icons for popular extensions
 
@@ -32,15 +32,6 @@ include css file `css-file-icons.css` from folder `build`
  // example: .fi.fi-doc
  ```
 
-## Sponsors
-The following wonderful companies have sponsored CSS file icons
-
-<a href="https://opencollective.com/css-file-icons#backer" target="_blank"><img src="https://opencollective.com/static/images/become_sponsor.svg"></a>
-
-[Learn more about becoming a sponsor!](https://opencollective.com/css-file-icons#sponsor)
-
-<a href="https://opencollective.com/css-file-icons#sponsor" target="_blank"><img src="https://opencollective.com/static/images/become_backer.svg"></a>
-
 ## Sizes
  ```
 .fi.fi-size-sm // default
@@ -61,7 +52,7 @@ The following wonderful companies have sponsored CSS file icons
 
 ## Contributors
 
-This project exists thanks to all the people who contribute. 
+This project exists thanks to all the people who contribute.
 <a href="https://github.com/colorswall/CSS-file-icons/graphs/contributors"><img src="https://opencollective.com/CSS-file-icons/contributors.svg?width=890&button=false" /></a>
 
 
