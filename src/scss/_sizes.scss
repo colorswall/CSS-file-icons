@@ -1,0 +1,14 @@
+@include fi-size('xs', $fi_width*0.8, $fi_height*0.8, $fi_arrow*0.8, $fi_font_size*0.8);
+@include fi-size('sm', $fi_width, $fi_height, $fi_arrow, $fi_font_size);
+@include fi-size('md', $fi_width*1.2, $fi_height*1.2, $fi_arrow*1.2, $fi_font_size*1.2);
+@include fi-size('lg', $fi_width*1.5, $fi_height*1.5, $fi_arrow*1.5, $fi_font_size*1.5);
+@include fi-size('xl', $fi_width*2, $fi_height*2, $fi_arrow*2, $fi_font_size*2);
+
+.fi {
+    &-content-xs {
+        .fi-content {
+            font-size: 11px;
+            padding-top: 55%;
+        }
+    }
+}

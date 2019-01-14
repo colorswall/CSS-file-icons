@@ -1,0 +1,40 @@
+// File icon Color
+@mixin fi-color($class, $color, $text_color:$fi_text_color) {
+    .fi-#{$class} {
+        &.fi {
+             &:before {
+                background-color: $color;
+             }
+             &:after {
+                border-left-color: lighten($color, 13%);
+             }
+             .fi-content {
+                background-color: $color;
+                color: $text_color;
+             }
+        }
+    }
+}
+
+// File icon Size
+@mixin fi-size($class, $width, $height, $arrow_h, $font_size) {
+    .fi-size-#{$class} {
+        &.fi {
+            width: $width;
+            height: $height;
+            padding-top: $arrow_h;
+             &:before {
+                right: $arrow_h;
+             }
+             &:after {
+                border-top-width: $arrow_h;
+                border-left-width: $arrow_h;
+             }
+             .fi-content {
+                top: $arrow_h;
+                padding-top: #{$height - $font_size * $fi_lh - $arrow_h};
+                font-size: $font_size;
+             }
+        }
+    }
+}

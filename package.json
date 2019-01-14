@@ -1,12 +1,14 @@
 {
   "name": "css-file-icons",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "css colors file extension icons",
-  "style": "build/style.css",
-  "main": "build/style.css",
+  "style": "build/css-file-icons.css",
+  "main": "build/css-file-icons.css",
   "scripts": {
     "dev": "npm run lint && webpack-dev-server --config webpack.dev.config.js --inline",
-    "lint": "./node_modules/.bin/eslint js"
+    "build": "npm run lint && webpack --config webpack.config.js -p",
+    "lint": "./node_modules/.bin/eslint js",
+    "postinstall": "opencollective-postinstall"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/colorswall/CSS-file-icons/issues"
   },
-  "homepage": "https://github.com/colorswall/CSS-file-icons#readme",
+  "homepage": "https://colorswall.github.io/CSS-file-icons/",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^6.1.0",
@@ -38,6 +40,14 @@
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.14",
-    "webpack-dev-server": ">=3.1.11"
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "opencollective-postinstall": "^2.0.1",
+    "opencollective": "^1.0.3"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/CSS-file-icons"
   }
 }

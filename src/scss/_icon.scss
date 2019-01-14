@@ -1,0 +1,56 @@
+.fi {
+    width: $fi_width;
+    height: $fi_height;
+    padding: $fi_arrow 0 0;
+    position: relative;
+    margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    display: block;
+    &:before,
+    &:after {
+        position: absolute;
+        content: '';
+        pointer-events: none;
+    }
+
+    &:before {
+        left: 0;
+        top: 0;
+        height: 100%;
+        left: 0;
+        background-color: $fi_color;
+        right: $fi_arrow;
+    }
+
+    &:after {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $fi_arrow 0 0 $fi_arrow;
+        border-color: transparent transparent transparent lighten($fi_color, 20%);
+        top: 0;
+        right: 0;
+    }
+
+  	&:hover{
+  		transform: translate(0, -5px);
+  	}
+
+    &-content {
+        background-color: $fi_color;
+        top: $fi_arrow;
+        color: $fi_text_color;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: #{$fi_height - $fi_font_size * $fi_lh - $fi_arrow} 0.3em 0;
+        font-size: $fi_font_size;
+        font-weight: 500;
+        position: absolute;
+    }
+}
