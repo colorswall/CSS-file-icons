@@ -40,11 +40,11 @@
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.14",
-    "webpack-dev-server": ">=3.1.11"
+    "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
-    "opencollective-postinstall": "^2.0.1",
-    "opencollective": "^1.0.3"
+    "opencollective": "^1.0.3",
+    "opencollective-postinstall": "^2.0.2"
   },
   "collective": {
     "type": "opencollective",
