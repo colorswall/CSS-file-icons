@@ -2,12 +2,12 @@
 [![Backers on Open Collective](https://opencollective.com/CSS-file-icons/backers/badge.svg)](#backers)
  [![Sponsors on Open Collective](https://opencollective.com/CSS-file-icons/sponsors/badge.svg)](#sponsors)
 
-Pure CSS file icons for popular extensions
+Pure CSS file icons for popular extensions lightweight css library
 
 ## Icons
 [<img src="https://raw.githubusercontent.com/colorswall/CSS-file-icons/master/src/images/icons.png" alt="CSS file icons" data-canonical-src="https://raw.githubusercontent.com/colorswall/CSS-file-icons/master/src/images/icons.png" width="721" height="241" />](https://colorswall.github.io/CSS-file-icons/)
 
-[demo](https://colorswall.github.io/CSS-file-icons/)
+[Demo](https://colorswall.github.io/CSS-file-icons/)
 
 ## Usage
 Include `css-file-icons.css` to html or install via npm
@@ -82,4 +82,4 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/CSS-file-icons/sponsor/8/website" target="_blank"><img src="https://opencollective.com/CSS-file-icons/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/CSS-file-icons/sponsor/9/website" target="_blank"><img src="https://opencollective.com/CSS-file-icons/sponsor/9/avatar.svg"></a>
 
-
+Created by [ColorsWall](https://colorswall.com/)
