@@ -34,6 +34,7 @@ include css file `css-file-icons.css` from folder `build`
 
 ## Sizes
  ```css
+.fi.fi-size-xs
 .fi.fi-size-sm // default
 .fi.fi-size-md
 .fi.fi-size-lg
