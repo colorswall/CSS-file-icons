@@ -17,7 +17,7 @@ npm i css-file-icons --save
 include css file `css-file-icons.css` from folder `build`
 
 ## Example
-```
+```html
 <div class="fi fi-doc">
     <div class="fi-content">doc</div>
 </div>
@@ -26,27 +26,27 @@ include css file `css-file-icons.css` from folder `build`
 ## File extensions
  Icons for files doc, docx, log, txt, wps, csv, dat, ppt, xml, mp3, wav, avi, mov, mp4, 3ds, max, gif, ai, svg, pdf, xls, xlsx, sql, exe, js, html, xhtml, css, asp, ttf, dll, 7z, zip, c, cs, java, swift, torrent, php, hh, go, py, rss, rb.
 
- ```
+ ```css
  .fi.fi-*extension*
  // where *extension* = file extension.
  // example: .fi.fi-doc
  ```
 
 ## Sizes
- ```
+ ```css
 .fi.fi-size-sm // default
 .fi.fi-size-md
 .fi.fi-size-lg
-.fi.fi-size-x
+.fi.fi-size-xl
  ```
 
 ## SCSS Mixins
 #### New icon color
-```
+```scss
 @mixin fi-color($class, $color, $text_color:$file_icon_text_color)
 ```
 #### Icon size
-```
+```scss
 @mixin fi-size($class, $width, $height, $arrow_h, $font_size)
 ```
 
