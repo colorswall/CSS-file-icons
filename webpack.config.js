@@ -1,37 +1,44 @@
 const path = require('path');
 const commonConfig = require('./webpack.common.config');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const extractCSS = new ExtractTextPlugin('css-file-icons.css');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const output = {
     path: path.resolve(__dirname, 'build'),
-    publicPath: 'https://colorswall.github.io/CSS-file-icons/build/',
-    filename: 'bundle.js'
+    publicPath: './',
+    filename: '[name].js'
 };
 
-const conf = {
-    ...commonConfig,
-    ...{
-        output: output,
-        module: {
-            loaders: [
-                ...commonConfig.module.loaders,
-                {
-                    test: /\.s?css$/,
-                    exclude: /(node_modules)/,
-                    loader: extractCSS.extract('style', 'css!postcss!sass')
-                }
-            ]
-        },
-        plugins: [
-            extractCSS
-        ],
-        devServer: {
-            historyApiFallback: true,
-            contentBase: './src',
-            port: 3005
-        }
-    }
-};
+const conf = Object.assign(commonConfig, {
+    output,
+    plugins: [
+        ...commonConfig.plugins,
+        new MiniCssExtractPlugin({
+            filename: 'css-file-icons.css',
+            chunkFilename: '[id].css',
+            ignoreOrder: false,
+        }),
+    ],
+    devtool: 'source-map',
+    module: {
+        rules: commonConfig.module.rules.concat({
+            test: /\.s?css$/,
+            use: [{
+                    loader: MiniCssExtractPlugin.loader,
+                    options: {
+                        publicPath: output.publicPath,
+                        hmr: process.env.NODE_ENV === 'development',
+                    },
+                },
+                'css-loader',
+                'postcss-loader',
+                'sass-loader',
+            ],
+        }, )
+    },
+    optimization: {
+        concatenateModules: true,
+        minimize: true,
+    },
+});
 
 module.exports = conf;

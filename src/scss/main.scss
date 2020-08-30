@@ -1,11 +1,12 @@
 /*!
- * CSS file icons v0.0.7 (https://colorswall.github.io/CSS-file-icons)
- * Copyright 2018 The CSS file icons Authors
+ * CSS file icons v0.1.0 (https://colorswall.github.io/CSS-file-icons)
+ * Copyright 2020 The CSS file icons Authors
  * Licensed under MIT
  */
 
 @import "variables";
 @import "icon";
 @import "mixins";
-@import "extensions";
+@import "extensions/index";
 @import "sizes";
+@import "rounded";

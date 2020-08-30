@@ -2,8 +2,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CSS file icons - pure CSS file icons for popular extensions</title>
+    <title>CSS file icons - pure CSS file icons for most popular file extensions and file types.</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" type="text/css" href="build/landing.css" />
     <link rel="stylesheet" type="text/css" href="build/css-file-icons.css" />
 </head>
 
@@ -13,192 +14,455 @@
             <div>
                 <h1>CSS file icons</h1>
                 <div class="mb-3">
-                    Pure CSS file icons for popular extensions
+                    Pure CSS file icons for most popular file extensions and file types.
                 </div>
-
                 <div class="nav-header">
-                <a class="btn" href="https://github.com/colorswall/CSS-file-icons">GitHub</a>
-
-                <!-- Place this tag where you want the button to render. -->
-                <a class="github-button" href="https://github.com/colorswall/CSS-file-icons" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star colorswall/CSS-file-icons on GitHub">Star</a>
+                    <a class="btn" href="https://github.com/colorswall/CSS-file-icons">GitHub</a>
+                    <a class="github-button" href="https://github.com/colorswall/CSS-file-icons" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star colorswall/CSS-file-icons on GitHub">Star</a>
                 </div>
             </div>
         </div>
     </header>
     <main class="page-content">
         <div class="container">
-            <!--             <div>
-                <pre class="code prettyprint"><code class="code-content">npm install --save</code></pre>
-            </div> -->
             <div id="how">
                 <h2>How to use</h2>
-                Include 'css-file-icons.css' to html &lt;head&gt;. <br>
-                Inside html insert block with class 'fi':
+                <p>Include <code>css-file-icons.css</code> to html or install via npm</p>
+                <pre class="code prettyprint lang-javascript"><code class="code-content">npm install css-file-icons --save</code></pre>
+                Inside html insert block with class <code>fi</code>:
                 <pre class="code prettyprint lang-html"><code class="code-content">&lt;div class=&quot;fi fi-doc&quot;&gt;
     &lt;div class=&quot;fi-content&quot;&gt;doc&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                To change icon color change class name. For example for EXE file class name "fi-exe"
+                To change icon color change class name. For example for EXE file class name <code>fi-exe</code>
                 <pre class="code prettyprint lang-html"><code class="code-content">&lt;div class=&quot;fi fi-exe&quot;&gt;</code></pre>
             </div>
-            <section id="extensions">
-                <h2>
-            File icon extensions
-        </h2>
-                <div class="mb-3">
-                    Icons for files doc, docx, log, txt, wps, csv, dat, ppt, xml, mp3, wav, avi, mov, mp4, 3ds, max, gif, ai, svg, pdf, xls, xlsx, sql, exe, js, html, xhtml, css, asp, ttf, dll, 7z, zip, c, cs, java, swift, torrent, php, hh, go, psd, png, bmp, png, bmp, vb.
-                </div>
-                <div class="fi-list">
-                    <div class="fi fi-doc">
-                        <div class="fi-content">doc</div>
-                    </div>
-                    <div class="fi fi-docx">
-                        <div class="fi-content">docx</div>
-                    </div>
-                    <div class="fi fi-log">
-                        <div class="fi-content">log</div>
-                    </div>
-                    <div class="fi fi-txt">
-                        <div class="fi-content">txt</div>
-                    </div>
-                    <div class="fi fi-wps">
-                        <div class="fi-content">wps</div>
-                    </div>
-                    <div class="fi fi-csv">
-                        <div class="fi-content">csv</div>
-                    </div>
-                    <div class="fi fi-dat">
-                        <div class="fi-content">dat</div>
-                    </div>
-                    <div class="fi fi-ppt">
-                        <div class="fi-content">ppt</div>
-                    </div>
-                    <div class="fi fi-xml">
-                        <div class="fi-content">xml</div>
-                    </div>
-                    <div class="fi fi-mp3">
-                        <div class="fi-content">mp3</div>
-                    </div>
-                    <div class="fi fi-wav">
-                        <div class="fi-content">wav</div>
-                    </div>
-                    <div class="fi fi-avi">
-                        <div class="fi-content">avi</div>
-                    </div>
-                    <div class="fi fi-mov">
-                        <div class="fi-content">mov</div>
-                    </div>
-                    <div class="fi fi-mp4">
-                        <div class="fi-content">mp4</div>
-                    </div>
-                    <div class="fi fi-3ds">
-                        <div class="fi-content">3ds</div>
-                    </div>
-                    <div class="fi fi-max">
-                        <div class="fi-content">max</div>
-                    </div>
-                    <div class="fi fi-gif">
-                        <div class="fi-content">gif</div>
-                    </div>
-                    <div class="fi fi-ai">
-                        <div class="fi-content">ai</div>
-                    </div>
-                    <div class="fi fi-svg">
-                        <div class="fi-content">svg</div>
-                    </div>
-                    <div class="fi fi-pdf">
-                        <div class="fi-content">pdf</div>
-                    </div>
-                    <div class="fi fi-xls">
-                        <div class="fi-content">xls</div>
-                    </div>
-                    <div class="fi fi-xlsx">
-                        <div class="fi-content">xlsx</div>
-                    </div>
-                    <div class="fi fi-sql">
-                        <div class="fi-content">sql</div>
-                    </div>
-                    <div class="fi fi-exe">
-                        <div class="fi-content">exe</div>
-                    </div>
-                    <div class="fi fi-js">
-                        <div class="fi-content">js</div>
-                    </div>
-                    <div class="fi fi-html">
-                        <div class="fi-content">html</div>
-                    </div>
-                    <div class="fi fi-xhtml fi-content-xs">
-                        <div class="fi-content">xhtml</div>
-                    </div>
-                    <div class="fi fi-css">
-                        <div class="fi-content">css</div>
-                    </div>
-                    <div class="fi fi-asp">
-                        <div class="fi-content">asp</div>
-                    </div>
-                    <div class="fi fi-ttf">
-                        <div class="fi-content">ttf</div>
-                    </div>
-                    <div class="fi fi-dll">
-                        <div class="fi-content">dll</div>
-                    </div>
-                    <div class="fi fi-7z">
-                        <div class="fi-content">7z</div>
-                    </div>
-                    <div class="fi fi-zip">
-                        <div class="fi-content">zip</div>
-                    </div>
-                    <div class="fi fi-c">
-                        <div class="fi-content">c</div>
-                    </div>
-                    <div class="fi fi-cs">
-                        <div class="fi-content">cs</div>
-                    </div>
-                    <div class="fi fi-java">
-                        <div class="fi-content">java</div>
-                    </div>
-                    <div class="fi fi-swift">
-                        <div class="fi-content">swift</div>
-                    </div>
-                    <div class="fi fi-torrent fi-content-xs">
-                        <div class="fi-content">torrent</div>
-                    </div>
-                    <div class="fi fi-php">
-                        <div class="fi-content">php</div>
-                    </div>
-                    <div class="fi fi-hh">
-                        <div class="fi-content">hh</div>
-                    </div>
-                    <div class="fi fi-go">
-                        <div class="fi-content">go</div>
-                    </div>
-                    <div class="fi fi-py">
-                        <div class="fi-content">py</div>
-                    </div>
-                    <div class="fi fi-rss">
-                        <div class="fi-content">rss</div>
-                    </div>
-                    <div class="fi fi-rb">
-                        <div class="fi-content">rb</div>
-                    </div>
-                    <div class="fi fi-psd">
-                        <div class="fi-content">psd</div>
-                    </div>
-                    <div class="fi fi-png">
-                        <div class="fi-content">png</div>
-                    </div>
-                    <div class="fi fi-bmp">
-                        <div class="fi-content">bmp</div>
-                    </div>
-                    <div class="fi fi-vb">
-                        <div class="fi-content">vb</div>
-                    </div>
 
-                    <div class="fi fi-content-xs">
-                        <div class="fi-content">any</div>
+            <section id="extensions" class="mb">
+                <div class="page-contents">
+                    <h3>File extensions categories</h3>
+                    <ul class="page-nav">
+                        <li><a href="#audio">Audio</a></li>
+                        <li><a href="#compressed">Compressed</a></li>
+                        <li><a href="#data">Data</a></li>
+                        <li><a href="#databases">Databases</a></li>
+                        <li><a href="#design">Design</a></li>
+                        <li><a href="#fonts">Fonts</a></li>
+                        <li><a href="#images">Images</a></li>
+                        <li><a href="#internet">Internet</a></li>
+                        <li><a href="#presentation">Presentation</a></li>
+                        <li><a href="#programming">Programming Languages</a></li>
+                        <li><a href="#spreadsheet">Spreadsheet</a></li>
+                        <li><a href="#system">System</a></li>
+                        <li><a href="#text">Text</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <li><a href="#other">Other</a></li>
+                    </ul>
+                </div>
+                <div id="audio" class="fi-group">
+                    <h3>Audio</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-mp3">
+                            <div class="fi-content">mp3</div>
+                        </div>
+                        <div class="fi fi-wav">
+                            <div class="fi-content">wav</div>
+                        </div>
+                        <div class="fi fi-aif">
+                            <div class="fi-content">aif</div>
+                        </div>
+                        <div class="fi fi-cda">
+                            <div class="fi-content">cda</div>
+                        </div>
+                        <div class="fi fi-mid">
+                            <div class="fi-content">mid</div>
+                        </div>
+                        <div class="fi fi-midi">
+                            <div class="fi-content">midi</div>
+                        </div>
+                        <div class="fi fi-mpa">
+                            <div class="fi-content">mpa</div>
+                        </div>
+                        <div class="fi fi-mkv">
+                            <div class="fi-content">mkv</div>
+                        </div>
+                        <div class="fi fi-ogg">
+                            <div class="fi-content">ogg</div>
+                        </div>
+                        <div class="fi fi-wpa">
+                            <div class="fi-content">wpa</div>
+                        </div>
+                        <div class="fi fi-wpl">
+                            <div class="fi-content">wpl</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="compressed" class="fi-group">
+                    <h3>Compressed</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-7z">
+                            <div class="fi-content">7z</div>
+                        </div>
+                        <div class="fi fi-zip">
+                            <div class="fi-content">zip</div>
+                        </div>
+                        <div class="fi fi-rar">
+                            <div class="fi-content">rar</div>
+                        </div>
+                        <div class="fi fi-tar-gz fi-content-xs">
+                            <div class="fi-content">tar.gz</div>
+                        </div>
+                        <div class="fi fi-pkg">
+                            <div class="fi-content">pkg</div>
+                        </div>
+                        <div class="fi fi-z">
+                            <div class="fi-content">z</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="data" class="fi-group">
+                    <h3>Data</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-csv">
+                            <div class="fi-content">csv</div>
+                        </div>
+                        <div class="fi fi-dat">
+                            <div class="fi-content">dat</div>
+                        </div>
+                        <div class="fi fi-json">
+                            <div class="fi-content">json</div>
+                        </div>
+                        <div class="fi fi-xml">
+                            <div class="fi-content">xml</div>
+                        </div>
+                        <div class="fi fi-dat">
+                            <div class="fi-content">dat</div>
+                        </div>
+                        <div class="fi fi-db">
+                            <div class="fi-content">db</div>
+                        </div>
+                        <div class="fi fi-dbf">
+                            <div class="fi-content">dbf</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="databases" class="fi-group">
+                    <h3>Databases</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-sql">
+                            <div class="fi-content">sql</div>
+                        </div>
+                        <div class="fi fi-ns">
+                            <div class="fi-content">ns</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="design" class="fi-group">
+                    <h3>Design</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-3ds">
+                            <div class="fi-content">3ds</div>
+                        </div>
+                        <div class="fi fi-max">
+                            <div class="fi-content">max</div>
+                        </div>
+                        <div class="fi fi-ai">
+                            <div class="fi-content">ai</div>
+                        </div>
+                        <div class="fi fi-psd">
+                            <div class="fi-content">psd</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fonts" class="fi-group">
+                    <h3>Fonts</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-ttf">
+                            <div class="fi-content">ttf</div>
+                        </div>
+                        <div class="fi fi-woff">
+                            <div class="fi-content">woff</div>
+                        </div>
+                        <div class="fi fi-woff2">
+                            <div class="fi-content">woff2</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="images" class="fi-group">
+                    <h3>Images</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-png">
+                            <div class="fi-content">png</div>
+                        </div>
+                        <div class="fi fi-bmp">
+                            <div class="fi-content">bmp</div>
+                        </div>
+                        <div class="fi fi-jpg">
+                            <div class="fi-content">jpg</div>
+                        </div>
+                        <div class="fi fi-jpeg">
+                            <div class="fi-content">jpeg</div>
+                        </div>
+                        <div class="fi fi-gif">
+                            <div class="fi-content">gif</div>
+                        </div>
+                        <div class="fi fi-tif">
+                            <div class="fi-content">tif</div>
+                        </div>
+                        <div class="fi fi-tiff">
+                            <div class="fi-content">tiff</div>
+                        </div>
+                        <div class="fi fi-svg">
+                            <div class="fi-content">svg</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="internet" class="fi-group">
+                    <h3>Internet</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-rss">
+                            <div class="fi-content">rss</div>
+                        </div>
+                        <div class="fi fi-torrent fi-content-xs">
+                            <div class="fi-content">torrent</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="presentation" class="fi-group">
+                    <h3>Presentation</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-ppt">
+                            <div class="fi-content">ppt</div>
+                        </div>
+                        <div class="fi fi-pps">
+                            <div class="fi-content">pps</div>
+                        </div>
+                        <div class="fi fi-pptx">
+                            <div class="fi-content">pptx</div>
+                        </div>
+                        <div class="fi fi-odp">
+                            <div class="fi-content">odp</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="programming" class="fi-group">
+                    <h3>Programming Languages</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-asp">
+                            <div class="fi-content">asp</div>
+                        </div>
+                        <div class="fi fici">
+                            <div class="fi-content">c</div>
+                        </div>
+                        <div class="fi fi-cs">
+                            <div class="fi-content">cs</div>
+                        </div>
+                        <div class="fi fi-java">
+                            <div class="fi-content">java</div>
+                        </div>
+                        <div class="fi fi-jsp">
+                            <div class="fi-content">jsp</div>
+                        </div>
+                        <div class="fi fi-swift">
+                            <div class="fi-content">swift</div>
+                        </div>
+                        <div class="fi fi-php">
+                            <div class="fi-content">php</div>
+                        </div>
+                        <div class="fi fi-hh">
+                            <div class="fi-content">hh</div>
+                        </div>
+                        <div class="fi fi-go">
+                            <div class="fi-content">go</div>
+                        </div>
+                        <div class="fi fi-py">
+                            <div class="fi-content">py</div>
+                        </div>
+                        <div class="fi fi-js">
+                            <div class="fi-content">js</div>
+                        </div>
+                        <div class="fi fi-html">
+                            <div class="fi-content">html</div>
+                        </div>
+                        <div class="fi fi-xhtml">
+                            <div class="fi-content">xhtml</div>
+                        </div>
+                        <div class="fi fi-css">
+                            <div class="fi-content">css</div>
+                        </div>
+                        <div class="fi fi-vb">
+                            <div class="fi-content">vb</div>
+                        </div>
+                        <div class="fi fi-rb">
+                            <div class="fi-content">rb</div>
+                        </div>
+                        <div class="fi fi-scss">
+                            <div class="fi-content">scss</div>
+                        </div>
+                        <div class="fi fi-sass">
+                            <div class="fi-content">sass</div>
+                        </div>
+                        <div class="fi fi-less">
+                            <div class="fi-content">less</div>
+                        </div>
+                        <div class="fi fi-jsx">
+                            <div class="fi-content">jsx</div>
+                        </div>
+                        <div class="fi fi-sh">
+                            <div class="fi-content">sh</div>
+                        </div>
+                        <div class="fi fi-pl">
+                            <div class="fi-content">pl</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="spreadsheet" class="fi-group">
+                    <h3>Spreadsheet</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-xls">
+                            <div class="fi-content">xls</div>
+                        </div>
+                        <div class="fi fi-xlsx">
+                            <div class="fi-content">xlsx</div>
+                        </div>
+                        <div class="fi fi-xlsm">
+                            <div class="fi-content">xlsm</div>
+                        </div>
+                        <div class="fi fi-ods">
+                            <div class="fi-content">ods</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="system" class="fi-group">
+                    <h3>System</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-dll">
+                            <div class="fi-content">dll</div>
+                        </div>
+                        <div class="fi fi-bak">
+                            <div class="fi-content">bak</div>
+                        </div>
+                        <div class="fi fi-ini">
+                            <div class="fi-content">ini</div>
+                        </div>
+                        <div class="fi fi-dmp">
+                            <div class="fi-content">dmp</div>
+                        </div>
+                        <div class="fi fi-sys">
+                            <div class="fi-content">sys</div>
+                        </div>
+                        <div class="fi fi-cfg">
+                            <div class="fi-content">cfg</div>
+                        </div>
+                        <div class="fi fi-tmp">
+                            <div class="fi-content">tmp</div>
+                        </div>
+                        <div class="fi fi-icns">
+                            <div class="fi-content">icns</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="text" class="fi-group">
+                    <h3>Text</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-doc">
+                            <div class="fi-content">doc</div>
+                        </div>
+                        <div class="fi fi-docx">
+                            <div class="fi-content">docx</div>
+                        </div>
+                        <div class="fi fi-log">
+                            <div class="fi-content">log</div>
+                        </div>
+                        <div class="fi fi-txt">
+                            <div class="fi-content">txt</div>
+                        </div>
+                        <div class="fi fi-pdf">
+                            <div class="fi-content">pdf</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="video" class="fi-group">
+                    <h3>Video</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-avi">
+                            <div class="fi-content">avi</div>
+                        </div>
+                        <div class="fi fi-mov">
+                            <div class="fi-content">mov</div>
+                        </div>
+                        <div class="fi fi-mp4">
+                            <div class="fi-content">mp4</div>
+                        </div>
+                        <div class="fi fi-mpg">
+                            <div class="fi-content">mpg</div>
+                        </div>
+                        <div class="fi fi-mpeg">
+                            <div class="fi-content">mpeg</div>
+                        </div>
+                        <div class="fi fi-mkv">
+                            <div class="fi-content">mkv</div>
+                        </div>
+                        <div class="fi fi-wmv">
+                            <div class="fi-content">wmv</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="other" class="fi-group">
+                    <h3>Other</h3>
+                    <div class="fi-list">
+                        <div class="fi fi-wps">
+                            <div class="fi-content">wps</div>
+                        </div>
+                        <div class="fi fi-exe">
+                            <div class="fi-content">exe</div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <hr>
+            <hr />
+                        <section id="extensions-all" class="mb">
+                <h2>
+                    File extensions
+                </h2>
+
+                    Icons for file types:
+
+
+<div>
+    mp3, wav, aif, cda, mid, midi, mpa, mkv, ogg, wpa, wpl,
+
+7z, zip, rar, tar.gz, pkg, z,
+
+csv, dat, json, xml, dat, db, dbf,
+
+sql, ns,
+
+3ds, max, ai, psd,
+
+ttf, woff, woff2,
+
+png, bmp, jpg, jpeg, gif, tif, tiff, svg,
+
+rss, torrent,
+
+ppt, pps, pptx, odp,
+
+asp, c, cs, java, jsp, swift, php, hh, go, py, js, html, xhtml, css, vb, rb, scss, sass, less, jsx, sh, pl,
+
+xls, xlsx, xlsm, ods,
+
+dll, bak, ini, dmp, sys, cfg, tmp, icns,
+
+doc, docx, log, txt, pdf,
+
+avi, mov, mp4, mpg, mpeg, mkv, wmv,
+
+wps, exe.
+</div>
+
+            </section>
+
+            <hr />
             <section id="sizes">
                 <h2>Sizes</h2>
                 <div>
@@ -237,12 +501,34 @@
                     </div>
                 </div>
             </section>
+            <section id="rounded">
+                <h2>Rounded</h2>
+                <div>
+                    sm, md
+                    default border radius 0
+                </div>
+                <pre class="code prettyprint lang-css"><code class="code-content">.fi-round-sm
+.fi-round-md
+</code></pre>
+                <div class="fi-list">
+                    <div class="fi fi-round-sm fi-psd">
+                        <div class="fi-content">
+                            psd
+                        </div>
+                    </div>
+                    <div class="fi fi-round-md fi-js">
+                        <div class="fi-content">
+                            js
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         </div>
     </main>
     <footer class="page-footer">
-        2018 | Created by <a href="http://colorswall.com">Colorswall</a>
+        2020 | Created by <a href="https://colorswall.com">Colorswall</a>
     </footer>
-    <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <script src="build/bundle.js"></script>

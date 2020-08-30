@@ -1,0 +1,10 @@
+.fi-round {
+    &-sm.fi {
+        border-radius: 2px;
+        overflow: hidden;
+    }
+    &-md.fi {
+        border-radius: 4px;
+        overflow: hidden;
+    }
+}

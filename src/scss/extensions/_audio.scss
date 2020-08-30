@@ -1,0 +1,11 @@
+@include fi-color('mp3', #156aea);
+@include fi-color('wav', #36af14);
+@include fi-color('aif', #f55f73);
+@include fi-color('cda', #1081d1);
+@include fi-color('mid', #21c6fc);
+@include fi-color('midi', darken(#21c6fc, 10%));
+@include fi-color('mpa', #8deef1, #00013a);
+@include fi-color('mkv', #ec93d8, #00013a);
+@include fi-color('ogg', #576c7b);
+@include fi-color('wpa', #214767);
+@include fi-color('wpl', #2383f5);
