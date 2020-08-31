@@ -41,9 +41,11 @@ avi, mov, mp4, mpg, mpeg, mkv, wmv,
 wps, exe.
 
  ```css
- .fi.fi-*extension*
- // where *extension* = file extension.
- // example: .fi.fi-doc
+.fi.fi-*extension*
+/*
+  where *extension* = file extension.
+  example: .fi.fi-doc
+*/
  ```
 
 ## Sizes
@@ -57,7 +59,7 @@ wps, exe.
 ## Rounded
 sm, md
 default border radius 0
-```
+```scss
 .fi-round-sm
 .fi-round-md
 ```
