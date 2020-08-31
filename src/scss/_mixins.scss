@@ -2,16 +2,18 @@
 @mixin fi-color($class, $color, $text_color:$fi_text_color) {
     .fi-#{$class} {
         &.fi {
-             &:before {
+            &:before {
                 background-color: $color;
-             }
-             &:after {
+            }
+
+            &:after {
                 border-left-color: lighten($color, 13%);
-             }
-             .fi-content {
+            }
+
+            .fi-content {
                 background-color: $color;
                 color: $text_color;
-             }
+            }
         }
     }
 }
@@ -23,18 +25,21 @@
             width: $width;
             height: $height;
             padding-top: $arrow_h;
-             &:before {
+
+            &:before {
                 right: $arrow_h;
-             }
-             &:after {
+            }
+
+            &:after {
                 border-top-width: $arrow_h;
                 border-left-width: $arrow_h;
-             }
-             .fi-content {
+            }
+
+            .fi-content {
                 top: $arrow_h;
                 padding-top: #{$height - $font_size * $fi_lh - $arrow_h};
                 font-size: $font_size;
-             }
+            }
         }
     }
 }

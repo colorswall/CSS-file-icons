@@ -3,7 +3,8 @@ const path = require('path');
 const autoprefixer = require('autoprefixer');
 
 const entry = {
-    'bundle': './src/js/app.js',
+    'css-file-icons': './src/js/app.js',
+    'landing': './src/js/landing.js',
 };
 
 module.exports = {
@@ -42,9 +43,6 @@ module.exports = {
         }],
         noParse: ["jquery"]
     },
-    // postcss: function() {
-    //     return [autoprefixer];
-    // },
     plugins: [
         autoprefixer
     ],

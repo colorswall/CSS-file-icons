@@ -13,12 +13,11 @@ const conf = Object.assign(commonConfig, {
     plugins: [
         ...commonConfig.plugins,
         new MiniCssExtractPlugin({
-            filename: 'css-file-icons.css',
+            filename: '[name].css',
             chunkFilename: '[id].css',
             ignoreOrder: false,
         }),
     ],
-    devtool: 'source-map',
     module: {
         rules: commonConfig.module.rules.concat({
             test: /\.s?css$/,

@@ -14,7 +14,7 @@ const conf = {
     plugins: [
         ...commonConfig.plugins,
         new MiniCssExtractPlugin({
-            filename: 'css-file-icons.css',
+            filename: '[name].css',
             chunkFilename: '[id].css',
             ignoreOrder: false,
         }),

@@ -12,7 +12,7 @@
     <header class="page-header">
         <div class="container">
             <div>
-                <h1>CSS file icons</h1>
+                <h1>CSS file icons <span class="small">0.1.0</span></h1>
                 <div class="mb-3">
                     Pure CSS file icons for most popular file extensions and file types.
                 </div>
@@ -25,18 +25,25 @@
     </header>
     <main class="page-content">
         <div class="container">
-            <div id="how">
+            <section id="how">
                 <h2>How to use</h2>
-                <p>Include <code>css-file-icons.css</code> to html or install via npm</p>
+                <p>Donwload <code>css-file-icons</code> or install via <a href="https://www.npmjs.com/package/css-file-icons">npm</a></p>
                 <pre class="code prettyprint lang-javascript"><code class="code-content">npm install css-file-icons --save</code></pre>
-                Inside html insert block with class <code>fi</code>:
+                <p>
+                    Include <code>css-file-icons.css</code><br />
+                    Inside html insert block with class <code>fi</code>:
+                </p>
                 <pre class="code prettyprint lang-html"><code class="code-content">&lt;div class=&quot;fi fi-doc&quot;&gt;
     &lt;div class=&quot;fi-content&quot;&gt;doc&lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 To change icon color change class name. For example for EXE file class name <code>fi-exe</code>
                 <pre class="code prettyprint lang-html"><code class="code-content">&lt;div class=&quot;fi fi-exe&quot;&gt;</code></pre>
-            </div>
-
+            </section>
+            <nav class="sidebar">
+                <a href="#how">How to use</a>
+                <a href="#extensions">File extensions</a>
+                <a href="#customization">Customization</a>
+            </nav>
             <section id="extensions" class="mb">
                 <div class="page-contents">
                     <h3>File extensions categories</h3>
@@ -420,51 +427,33 @@
                 </div>
             </section>
             <hr />
-                        <section id="extensions-all" class="mb">
+            <section id="extensions-all" class="mb">
                 <h2>
                     File extensions
                 </h2>
-
-                    Icons for file types:
-
-
-<div>
-    mp3, wav, aif, cda, mid, midi, mpa, mkv, ogg, wpa, wpl,
-
-7z, zip, rar, tar.gz, pkg, z,
-
-csv, dat, json, xml, dat, db, dbf,
-
-sql, ns,
-
-3ds, max, ai, psd,
-
-ttf, woff, woff2,
-
-png, bmp, jpg, jpeg, gif, tif, tiff, svg,
-
-rss, torrent,
-
-ppt, pps, pptx, odp,
-
-asp, c, cs, java, jsp, swift, php, hh, go, py, js, html, xhtml, css, vb, rb, scss, sass, less, jsx, sh, pl,
-
-xls, xlsx, xlsm, ods,
-
-dll, bak, ini, dmp, sys, cfg, tmp, icns,
-
-doc, docx, log, txt, pdf,
-
-avi, mov, mp4, mpg, mpeg, mkv, wmv,
-
-wps, exe.
-</div>
-
+                Icons for file types:
+                <div>
+                    mp3, wav, aif, cda, mid, midi, mpa, mkv, ogg, wpa, wpl,
+                    7z, zip, rar, tar.gz, pkg, z,
+                    csv, dat, json, xml, dat, db, dbf,
+                    sql, ns,
+                    3ds, max, ai, psd,
+                    ttf, woff, woff2,
+                    png, bmp, jpg, jpeg, gif, tif, tiff, svg,
+                    rss, torrent,
+                    ppt, pps, pptx, odp,
+                    asp, c, cs, java, jsp, swift, php, hh, go, py, js, html, xhtml, css, vb, rb, scss, sass, less, jsx, sh, pl,
+                    xls, xlsx, xlsm, ods,
+                    dll, bak, ini, dmp, sys, cfg, tmp, icns,
+                    doc, docx, log, txt, pdf,
+                    avi, mov, mp4, mpg, mpeg, mkv, wmv,
+                    wps, exe.
+                </div>
             </section>
-
             <hr />
+            <h2 id="customization">Customization</h2>
             <section id="sizes">
-                <h2>Sizes</h2>
+                <h3>Sizes</h3>
                 <div>
                     xs, sm, md, lg, xl
                 </div>
@@ -502,7 +491,7 @@ wps, exe.
                 </div>
             </section>
             <section id="rounded">
-                <h2>Rounded</h2>
+                <h3>Rounded</h3>
                 <div>
                     sm, md
                     default border radius 0
