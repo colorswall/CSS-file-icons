@@ -1,0 +1,8 @@
+@include fi-color('dll', #960a4a);
+@include fi-color('bak', #058bca);
+@include fi-color('ini', #0b2955);
+@include fi-color('dmp', #1960a2);
+@include fi-color('sys', #abe6f1);
+@include fi-color('cfg', darken(#abe6f1, 10%));
+@include fi-color('tmp', darken(#abe6f1, 15%));
+@include fi-color('icns', lighten(#abe6f1, 2%), #222222);

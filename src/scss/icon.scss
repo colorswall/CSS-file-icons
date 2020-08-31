@@ -17,6 +17,7 @@ $file_icon_lh: 1.5;
     cursor: pointer;
     box-sizing: border-box;
     font-family: sans-serif;
+
     &:before,
     &:after {
         position: absolute;
@@ -43,9 +44,9 @@ $file_icon_lh: 1.5;
         right: 0;
     }
 
-  	&:hover{
-  		transform: translate(0, -5px);
-  	}
+    &:hover {
+        transform: translate(0, -5px);
+    }
 
     &-content {
         background-color: $file_icon_color;
@@ -65,15 +66,17 @@ $file_icon_lh: 1.5;
 @mixin file-icon-color($class, $color) {
     .extension-#{$class} {
         &.file-icon {
-             &:before {
+            &:before {
                 background-color: $color;
-             }
-             &:after {
+            }
+
+            &:after {
                 border-left-color: lighten($color, 20%);
-             }
-             .file-icon-content {
+            }
+
+            .file-icon-content {
                 background-color: $color;
-             }
+            }
         }
     }
 }
@@ -84,18 +87,21 @@ $file_icon_lh: 1.5;
             width: $width;
             height: $height;
             padding-top: $arrow_h;
-             &:before {
+
+            &:before {
                 right: $arrow_h;
-             }
-             &:after {
+            }
+
+            &:after {
                 border-top-width: $arrow_h;
                 border-left-width: $arrow_h;
-             }
-             .file-icon-content {
+            }
+
+            .file-icon-content {
                 top: $arrow_h;
                 padding-top: #{$height - $font_size * $file_icon_lh - $arrow_h};
                 font-size: $font_size;
-             }
+            }
         }
     }
 }

@@ -1,0 +1,6 @@
+@include fi-color('7z', #f63);
+@include fi-color('zip', #ffb229);
+@include fi-color('rar', #ac3cc1, #1c148a);
+@include fi-color('tar-gz', #c6ad86, #665538);
+@include fi-color('pkg', #955b2a, #ebc645);
+@include fi-color('z', darken(#c6ad86, 10%), #665538);

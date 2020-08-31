@@ -1,41 +1,46 @@
 const path = require('path');
 const commonConfig = require('./webpack.common.config');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-<<<<<<< HEAD
-const extractCSS = new ExtractTextPlugin('style.css');
-=======
-const extractCSS = new ExtractTextPlugin('css-file-icons.css');
->>>>>>> faeed8d5c228e750cdddfb04e969e33245e8e252
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const output = {
     path: path.resolve(__dirname, 'build'),
-    publicPath: 'http://localhost:3005/build/',
-    filename: 'bundle.js'
+    publicPath: '//localhost:3005/build/',
+    filename: '[name].js'
 };
 
 const conf = {
     ...commonConfig,
-    ...{
-        output: output,
-        devtool: 'source-map',
-        module: {
-            loaders: [
-                ...commonConfig.module.loaders, {
-                    test: /\.s?css$/,
-                    exclude: /(node_modules)/,
-                    loader: extractCSS.extract('style', 'css?sourceMap!postcss?sourceMap!sass?sourceMap')
-                }
-            ]
-        },
-        plugins: [
-            extractCSS
-        ],
-        devServer: {
-            historyApiFallback: true,
-            contentBase: './src',
-            port: 3005
-        }
+    output,
+    plugins: [
+        ...commonConfig.plugins,
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
+            chunkFilename: '[id].css',
+            ignoreOrder: false,
+        }),
+    ],
+    devtool: 'source-map',
+    module: {
+        rules: commonConfig.module.rules.concat({
+            test: /\.s?css$/,
+            use: [{
+                    loader: MiniCssExtractPlugin.loader,
+                    options: {
+                        publicPath: output.publicPath,
+                        hmr: process.env.NODE_ENV === 'development',
+                    },
+                },
+                'css-loader',
+                'postcss-loader',
+                'sass-loader',
+            ],
+        }, )
+    },
+    devServer: {
+        historyApiFallback: true,
+        contentBase: './src',
+        port: 3005
     }
-};
+}
 
 module.exports = conf;

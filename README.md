@@ -24,7 +24,21 @@ include css file `css-file-icons.css` from folder `build`
 ```
 
 ## File extensions
- Icons for files doc, docx, log, txt, wps, csv, dat, ppt, xml, mp3, wav, avi, mov, mp4, 3ds, max, gif, ai, svg, pdf, xls, xlsx, sql, exe, js, html, xhtml, css, asp, ttf, dll, 7z, zip, c, cs, java, swift, torrent, php, hh, go, py, rss, rb.
+mp3, wav, aif, cda, mid, midi, mpa, mkv, ogg, wpa, wpl,
+7z, zip, rar, tar.gz, pkg, z,
+csv, dat, json, xml, dat, db, dbf,
+sql, ns,
+3ds, max, ai, psd,
+ttf, woff, woff2,
+png, bmp, jpg, jpeg, gif, tif, tiff, svg,
+rss, torrent,
+ppt, pps, pptx, odp,
+asp, c, cs, java, jsp, swift, php, hh, go, py, js, html, xhtml, css, vb, rb, scss, sass, less, jsx, sh, pl,
+xls, xlsx, xlsm, ods,
+dll, bak, ini, dmp, sys, cfg, tmp, icns,
+doc, docx, log, txt, pdf,
+avi, mov, mp4, mpg, mpeg, mkv, wmv,
+wps, exe.
 
  ```
  .fi.fi-*extension*
@@ -39,7 +53,13 @@ include css file `css-file-icons.css` from folder `build`
 .fi.fi-size-lg
 .fi.fi-size-x
  ```
-
+## Rounded
+sm, md
+default border radius 0
+```
+.fi-round-sm
+.fi-round-md
+```
 ## SCSS Mixins
 #### New icon color
 ```
