@@ -44,7 +44,7 @@ $file_icon_lh: 1.5;
         right: 0;
     }
 
-    &:hover {
+    &:hover:not(.fi-no-hover) {
         transform: translate(0, -5px);
     }
 
