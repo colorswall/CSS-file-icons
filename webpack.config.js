@@ -1,6 +1,7 @@
 const path = require('path');
 const commonConfig = require('./webpack.common.config');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 const output = {
     path: path.resolve(__dirname, 'build'),
@@ -36,6 +37,19 @@ const conf = Object.assign(commonConfig, {
     optimization: {
         concatenateModules: true,
         minimize: true,
+        minimizer: [
+            '...',  // This extends existing minimizers (i.e. `terser-webpack-plugin`)
+            new CssMinimizerPlugin({
+                minimizerOptions: {
+                    preset: [
+                        'default',
+                        {
+                            discardComments: { removeAll: true },
+                        },
+                    ],
+                },
+            }),
+        ],
     },
 });
 
