@@ -1,1 +1,0 @@
-!function(t){function o(r){if(n[r])return n[r].exports;var i=n[r]={exports:{},id:r,loaded:!1};return t[r].call(i.exports,i,i.exports,o),i.loaded=!0,i.exports}var n={};return o.m=t,o.c=n,o.p="https://colorswall.github.io/CSS-file-icons/build/",o(0)}([function(t,o,n){n(1)},function(t,o,n){"use strict";n(3),n(2)},function(t,o){},function(t,o){}]);
