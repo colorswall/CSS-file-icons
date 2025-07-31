@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "config" as *;
+
 .fi {
     width: $fi_width;
     height: $fi_height;
@@ -31,7 +34,7 @@
         height: 0;
         border-style: solid;
         border-width: $fi_arrow 0 0 $fi_arrow;
-        border-color: transparent transparent transparent lighten($fi_color, 20%);
+        border-color: transparent transparent transparent color.adjust($fi_color, $lightness: 20%);
         top: 0;
         right: 0;
     }

@@ -1,3 +1,6 @@
+@use "../mixins" as *;
+@use "sass:color";
+
 @include fi-color('asp', #5c2d91);
 @include fi-color('c', #3747a5);
 @include fi-color('cs', #013467);
@@ -15,7 +18,7 @@
 @include fi-color('vb', #19aad9);
 @include fi-color('rb', #a20d01);
 @include fi-color('scss', #bf4080);
-@include fi-color('sass', darken(#bf4080, 3%));
+@include fi-color('sass', color.adjust(#bf4080, $lightness: -3%));
 @include fi-color('less', #1d365d);
 @include fi-color('jsx', #61dafb, #222222);
 @include fi-color('sh', #2a3238, #4da925);

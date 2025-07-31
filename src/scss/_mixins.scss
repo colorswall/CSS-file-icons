@@ -1,5 +1,7 @@
 @use "config" as *;
 
+@use "sass:color";
+
 // File icon Color
 @mixin fi-color($class, $color, $text_color:$fi_text_color) {
     .fi-#{$class} {
@@ -9,7 +11,7 @@
             }
 
             &::after {
-                border-left-color: lighten($color, 13%);
+                border-left-color: color.adjust($color, $lightness: 13%);
             }
 
             .fi-content {

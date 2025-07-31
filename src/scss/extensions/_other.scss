@@ -1,2 +1,5 @@
+@use "../mixins" as *;
+@use "sass:color";
+
 @include fi-color('wps', #297eff);
 @include fi-color('exe', #0e63ab);

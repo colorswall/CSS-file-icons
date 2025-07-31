@@ -1,7 +1,10 @@
+@use "../mixins" as *;
+@use "sass:color";
+
 @include fi-color('csv', #579704);
 @include fi-color('dat', #0463ea);
 @include fi-color('json', #333333, #aaaaaa);
 @include fi-color('xml', #0e886b);
 @include fi-color('dat', #8b9c35);
-@include fi-color('db', darken(#8b9c35, 10%));
+@include fi-color('db', color.adjust(#8b9c35, $lightness: -10%));
 @include fi-color('dbf', #58e6a9);

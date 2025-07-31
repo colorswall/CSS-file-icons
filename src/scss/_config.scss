@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:math";
 
 // Variables
 $fi_width: 36px;
@@ -11,9 +12,9 @@ $fi_lh: 1.5;
 
 // Functions
 @function lighten-color($color, $amount) {
-  @return color.adjust($color, $lightness: $amount);
+  @return color.scale($color, $lightness: $amount);
 }
 
 @function darken-color($color, $amount) {
-  @return color.adjust($color, $lightness: -$amount);
+  @return color.scale($color, $lightness: -$amount);
 }

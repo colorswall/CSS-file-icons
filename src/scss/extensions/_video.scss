@@ -1,7 +1,11 @@
+@use "../mixins" as *;
+@use "sass:color";
+
+
 @include fi-color('avi', #40c1e6);
 @include fi-color('mov', #ff5838);
 @include fi-color('mp4', #4163b4);
 @include fi-color('wmv', #f76205);
 @include fi-color('mpg', #1298d6);
-@include fi-color('mpeg', darken(#1298d6, 10%));
-@include fi-color('mkv', darken(#1298d6, 15%));
+@include fi-color('mpeg', color.adjust(#1298d6, $lightness: -10%));
+@include fi-color('mkv', color.adjust(#1298d6, $lightness: -15%));

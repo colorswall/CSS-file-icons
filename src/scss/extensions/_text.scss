@@ -1,3 +1,6 @@
+@use "../mixins" as *;
+@use "sass:color";
+
 @include fi-color('doc', #235d9c);
 @include fi-color('docx', #2980b9);
 @include fi-color('log', #accff3);

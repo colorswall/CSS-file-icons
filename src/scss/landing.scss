@@ -1,4 +1,8 @@
+@use "sass:color";
+
 // Landing
+@use "config" as *;
+
 body {
     font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
@@ -46,7 +50,7 @@ h5 {
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-        background-color: darken(#157efb, 10%);
+        background-color: color.adjust(#157efb, $lightness: -10%);
         color: #fff;
     }
 }
@@ -113,7 +117,7 @@ hr {
 
 .page-contents {
     background-color: #f7fbff;
-    border: 1px solid darken(#f7fbff, 5%);
+    border: 1px solid color.adjust(#f7fbff, $lightness: -5%);
     padding: 0 0 24px;
 
     h3 {
@@ -134,7 +138,7 @@ a {
     color: #157efb;
 
     &:hover {
-        color: darken(#157efb, 15%);
+        color: color.adjust(#157efb, $lightness: -15%);
     }
 }
 
@@ -146,7 +150,7 @@ a {
     z-index: 111;
     padding: 8px 12px;
     background-color: #f7fbff;
-    border: 1px solid darken(#f7fbff, 5%);
+    border: 1px solid color.adjust(#f7fbff, $lightness: -5%);
     width: 180px;
 
     a {
