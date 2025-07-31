@@ -1,5 +1,9 @@
+
+@use "../mixins" as *;
+@use "sass:color";
+
 @include fi-color('xls', #86d44c);
-@include fi-color('xlsx', darken(#86d44c, 10%));
-@include fi-color('xlsm', darken(#86d44c, 15%));
-@include fi-color('ods', darken(#168b3a, 15%));
+@include fi-color('xlsx', color.adjust(#86d44c, $lightness: -10%));
+@include fi-color('xlsm', color.adjust(#86d44c, $lightness: -15%));
+@include fi-color('ods', color.adjust(#168b3a, $lightness: -15%));
 

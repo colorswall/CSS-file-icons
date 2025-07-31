@@ -1,4 +1,7 @@
+@use "../mixins" as *;
+@use "sass:color";
+
 @include fi-color('3ds', #015051);
-@include fi-color('max', lighten(#015051, 20%));
+@include fi-color('max', color.adjust(#015051, $lightness: 20%));
 @include fi-color('ai', #f67503);
 @include fi-color('psd', #181040, #3db6f2);

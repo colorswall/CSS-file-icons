@@ -1,5 +1,8 @@
+@use "../mixins" as *;
+@use "sass:color";
+
 @include fi-color('ttf', #174f57);
 @include fi-color('woff', #1b8c73);
-@include fi-color('woff2', darken(#1b8c73, 5%));
+@include fi-color('woff2', color.adjust(#1b8c73, $lightness: -5%));
 
 

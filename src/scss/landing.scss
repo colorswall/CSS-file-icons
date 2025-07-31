@@ -1,6 +1,10 @@
+@use "sass:color";
+
 // Landing
+@use "config" as *;
+
 body {
-    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -13,6 +17,8 @@ h4,
 h5 {
     font-weight: 500;
     color: #212121;
+    padding: 0;
+    margin: 0.5rem 0 1.5rem;
 }
 
 .fi-list {
@@ -46,32 +52,37 @@ h5 {
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-        background-color: darken(#157efb, 10%);
+        background-color: color.adjust(#157efb, $lightness: -10%);
         color: #fff;
     }
 }
 
 section {
-    padding: 32px 0 32px;
+    padding: 16px 0;
 }
 
 hr {
     border: 0;
     border-bottom: 1px solid #e7e7e7;
-    margin: 2em 0;
+    margin: 0.75em 0;
+}
+
+pre.prettyprint {
+    width: 100%;
 }
 
 .code {
     &.prettyprint {
         border: 0;
-        border-left: .3rem solid #e7e7e7;
+        border-radius: 4px;
         color: #655d5d;
+        width: 100%;
     }
 
     &-content {
         border-radius: 0;
         display: block;
-        padding: 1rem 1.2rem;
+        padding: 0;
         white-space: pre;
     }
 }
@@ -113,8 +124,8 @@ hr {
 
 .page-contents {
     background-color: #f7fbff;
-    border: 1px solid darken(#f7fbff, 5%);
-    padding: 0 0 24px 0;
+    border: 1px solid color.adjust(#f7fbff, $lightness: -5%);
+    padding: 0 0 24px;
 
     h3 {
         padding: 0 20px;
@@ -134,10 +145,9 @@ a {
     color: #157efb;
 
     &:hover {
-        color: darken(#157efb, 15%);
+        color: color.adjust(#157efb, $lightness: -15%);
     }
 }
-
 
 .sidebar {
     position: fixed;
@@ -146,7 +156,7 @@ a {
     z-index: 111;
     padding: 8px 12px;
     background-color: #f7fbff;
-    border: 1px solid darken(#f7fbff, 5%);
+    border: 1px solid color.adjust(#f7fbff, $lightness: -5%);
     width: 180px;
 
     a {

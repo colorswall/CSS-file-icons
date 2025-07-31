@@ -1,8 +1,11 @@
+@use "../mixins" as *;
+@use "sass:color";
+
 @include fi-color('png', #dc7460);
 @include fi-color('bmp', #459fa0);
 @include fi-color('jpg', #0074d0);
-@include fi-color('jpeg', darken(#0074d0, 5%));
+@include fi-color('jpeg', color.adjust(#0074d0, $lightness: -5%));
 @include fi-color('gif', #7979ec);
 @include fi-color('tif', #ce0258);
-@include fi-color('tiff', darken(#ce0258, 5%));
+@include fi-color('tiff', color.adjust(#ce0258, $lightness: -5%));
 @include fi-color('svg', #e6a420);

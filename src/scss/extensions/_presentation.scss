@@ -1,4 +1,7 @@
+@use "../mixins" as *;
+@use "sass:color";
+
 @include fi-color('ppt', #ce4123);
-@include fi-color('pps', darken(#d04626, 4%));
-@include fi-color('pptx', darken(#ca4425, 7%));
+@include fi-color('pps', color.adjust(#d04626, $lightness: -4%));
+@include fi-color('pptx', color.adjust(#ca4425, $lightness: -7%));
 @include fi-color('odp', #38aef9);
