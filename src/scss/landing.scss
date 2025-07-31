@@ -64,20 +64,25 @@ section {
 hr {
     border: 0;
     border-bottom: 1px solid #e7e7e7;
-    margin: 1.75em 0;
+    margin: 0.75em 0;
+}
+
+pre.prettyprint {
+    width: 100%;
 }
 
 .code {
     &.prettyprint {
         border: 0;
-        border-left: 0.3rem solid #e7e7e7;
+        border-radius: 4px;
         color: #655d5d;
+        width: 100%;
     }
 
     &-content {
         border-radius: 0;
         display: block;
-        padding: 1rem 1.2rem;
+        padding: 0;
         white-space: pre;
     }
 }

@@ -21,19 +21,50 @@ const conf = {
     ],
     devtool: 'source-map',
     module: {
-        rules: commonConfig.module.rules.concat({
-            test: /\.s?css$/,
-            use: [{
-                    loader: MiniCssExtractPlugin.loader,
-                    options: {
-                        publicPath: output.publicPath
+        rules: commonConfig.module.rules.concat(
+            {
+                test: /\.scss$/,
+                use: [{
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: output.publicPath
+                        },
                     },
-                },
-                'css-loader',
-                'postcss-loader',
-                'sass-loader',
-            ],
-        }, )
+                    'css-loader',
+                    'postcss-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            implementation: require('sass'),
+                            warnRuleAsWarning: true,
+                            sassOptions: {
+                                quietDeps: true,
+                                logger: {
+                                    warn: function(message, options) {
+                                        if (!message.includes('legacy')) {
+                                            console.warn(message);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: output.publicPath
+                        },
+                    },
+                    'css-loader',
+                    'postcss-loader'
+                ],
+            }
+        )
     },
     devServer: {
         historyApiFallback: true,

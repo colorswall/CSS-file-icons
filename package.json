@@ -1,6 +1,6 @@
 {
   "name": "css-file-icons",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "css colors file extension icons",
   "style": "build/css-file-icons.css",
   "main": "build/css-file-icons.css",
@@ -43,7 +43,7 @@
     "mini-css-extract-plugin": "^2.7.6",
     "postcss-loader": "^7.3.4",
     "postcss-scss": "^4.0.9",
-    "sass": "^1.69.7",
+    "sass": "^1.89.2",
     "sass-loader": "^13.3.3",
     "style-loader": "^3.3.3",
     "stylelint": "^16.23.0",
@@ -55,6 +55,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "code-prettify": "^0.1.0",
     "opencollective": "^1.0.3",
     "opencollective-postinstall": "^2.0.3"
   },
