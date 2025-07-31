@@ -26,8 +26,7 @@ const conf = {
             use: [{
                     loader: MiniCssExtractPlugin.loader,
                     options: {
-                        publicPath: output.publicPath,
-                        hmr: process.env.NODE_ENV === 'development',
+                        publicPath: output.publicPath
                     },
                 },
                 'css-loader',
@@ -38,8 +37,11 @@ const conf = {
     },
     devServer: {
         historyApiFallback: true,
-        contentBase: './src',
-        port: 3005
+        static: {
+            directory: path.join(__dirname, 'src')
+        },
+        port: 3005,
+        hot: true
     }
 }
 

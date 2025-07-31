@@ -21,7 +21,7 @@ $file_icon_lh: 1.5;
     &:before,
     &:after {
         position: absolute;
-        content: '';
+        content: "";
         pointer-events: none;
     }
 
@@ -39,7 +39,8 @@ $file_icon_lh: 1.5;
         height: 0;
         border-style: solid;
         border-width: $file_icon_arrow 0 0 $file_icon_arrow;
-        border-color: transparent transparent transparent lighten($file_icon_color, 20%);
+        border-color: transparent transparent transparent
+            lighten($file_icon_color, 20%);
         top: 0;
         right: 0;
     }
@@ -56,7 +57,8 @@ $file_icon_lh: 1.5;
         left: 0;
         bottom: 0;
         right: 0;
-        padding: #{$file_icon_height - $file_icon_font_size * $file_icon_lh - $file_icon_arrow} 0.3em 0;
+        padding: #{$file_icon_height - $file_icon_font_size * $file_icon_lh -
+            $file_icon_arrow} 0.3em 0;
         font-size: $file_icon_font_size;
         font-weight: 500;
         position: absolute;
@@ -106,29 +108,8 @@ $file_icon_lh: 1.5;
     }
 }
 
-
-@include file-icon-color('doc', #2c3e50);
-@include file-icon-color('docx', #2980b9);
-@include file-icon-color('wpd', #e67e22);
-@include file-icon-color('html', #e34c26);
-@include file-icon-size('md', 36px*2, 46px*2, 10px*2, 13px*2);
-// #1abc9c
-// #2ecc71
-// #3498db
-// #9b59b6
-// #34495e
-// #16a085
-// #27ae60
-// #2980b9
-// #8e44ad
-// #2c3e50
-// #f1c40f
-// #e67e22
-// #e74c3c
-// #ecf0f1
-// #95a5a6
-// #f39c12
-// #d35400
-// #c0392b
-// #bdc3c7
-// #7f8c8d
+@include file-icon-color("doc", #2c3e50);
+@include file-icon-color("docx", #2980b9);
+@include file-icon-color("wpd", #e67e22);
+@include file-icon-color("html", #e34c26);
+@include file-icon-size("md", 36px * 2, 46px * 2, 10px * 2, 13px * 2);

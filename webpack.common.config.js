@@ -1,5 +1,3 @@
-const ProvidePlugin = require('webpack').ProvidePlugin;
-const path = require('path');
 const autoprefixer = require('autoprefixer');
 
 const entry = {
@@ -9,6 +7,8 @@ const entry = {
 
 module.exports = {
     entry,
+    mode: 'development',
+    target: ['web', 'es5'],
     module: {
         rules: [{
             test: /\.m?js$/,
@@ -22,18 +22,28 @@ module.exports = {
         }, {
             test: /\.html$/,
             use: {
-                loader: 'file?name=[name].[ext]'
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]'
+                }
             }
         }, {
             test: /\.(jpe?g|png|gif)$/,
             exclude: /(node_modules)/,
             use: {
-                loader: 'url-loader?limit=10000'
+                loader: 'url-loader',
+                options: {
+                    limit: 10000
+                }
             }
         }, {
             test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             use: {
-                loader: "url-loader?limit=10000&minetype=application/font-woff"
+                loader: 'url-loader',
+                options: {
+                    limit: 10000,
+                    mimetype: 'application/font-woff'
+                }
             }
         }, {
             test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,

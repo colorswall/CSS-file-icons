@@ -24,8 +24,7 @@ const conf = Object.assign(commonConfig, {
             use: [{
                     loader: MiniCssExtractPlugin.loader,
                     options: {
-                        publicPath: output.publicPath,
-                        hmr: process.env.NODE_ENV === 'development',
+                        publicPath: output.publicPath
                     },
                 },
                 'css-loader',
