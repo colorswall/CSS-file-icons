@@ -1,6 +1,6 @@
 // Landing
 body {
-    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -52,7 +52,7 @@ h5 {
 }
 
 section {
-    padding: 32px 0 32px;
+    padding: 32px 0;
 }
 
 hr {
@@ -114,7 +114,7 @@ hr {
 .page-contents {
     background-color: #f7fbff;
     border: 1px solid darken(#f7fbff, 5%);
-    padding: 0 0 24px 0;
+    padding: 0 0 24px;
 
     h3 {
         padding: 0 20px;

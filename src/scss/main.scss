@@ -4,10 +4,10 @@
  * Licensed under MIT
  */
 
-@import "variables";
-@import "file_icon";
-@import "icon";
-@import "mixins";
-@import "extensions/index";
-@import "sizes";
-@import "rounded";
+@use "variables" as *;
+@use "file_icon";
+@use "icon";
+@use "mixins";
+@use "extensions" as *;
+@use "sizes";
+@use "rounded";

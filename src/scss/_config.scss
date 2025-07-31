@@ -1,0 +1,19 @@
+@use "sass:color";
+
+// Variables
+$fi_width: 36px;
+$fi_height: 46px;
+$fi_arrow: 10px;
+$fi_color: #007bff;
+$fi_text_color: #fff;
+$fi_font_size: 13px;
+$fi_lh: 1.5;
+
+// Functions
+@function lighten-color($color, $amount) {
+  @return color.adjust($color, $lightness: $amount);
+}
+
+@function darken-color($color, $amount) {
+  @return color.adjust($color, $lightness: -$amount);
+}

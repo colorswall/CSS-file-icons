@@ -11,15 +11,14 @@
     text-decoration: none;
     display: block;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
         position: absolute;
         content: '';
         pointer-events: none;
     }
 
-    &:before {
-        left: 0;
+    &::before {
         top: 0;
         height: 100%;
         left: 0;
@@ -27,7 +26,7 @@
         right: $fi_arrow;
     }
 
-    &:after {
+    &::after {
         width: 0;
         height: 0;
         border-style: solid;
@@ -43,12 +42,8 @@
 
     &-content {
         background-color: $fi_color;
-        top: $fi_arrow;
+        inset: $fi_arrow 0 0 0;
         color: $fi_text_color;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
         padding: #{$fi_height - $fi_font_size * $fi_lh - $fi_arrow} 0.3em 0;
         font-size: $fi_font_size;
         font-weight: 500;

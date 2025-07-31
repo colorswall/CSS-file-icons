@@ -18,15 +18,14 @@ $file_icon_lh: 1.5;
     box-sizing: border-box;
     font-family: sans-serif;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
         position: absolute;
         content: "";
         pointer-events: none;
     }
 
-    &:before {
-        left: 0;
+    &::before {
         top: 0;
         height: 100%;
         left: 0;
@@ -34,7 +33,7 @@ $file_icon_lh: 1.5;
         right: $file_icon_arrow;
     }
 
-    &:after {
+    &::after {
         width: 0;
         height: 0;
         border-style: solid;
@@ -51,12 +50,8 @@ $file_icon_lh: 1.5;
 
     &-content {
         background-color: $file_icon_color;
-        top: $file_icon_arrow;
+        inset: $file_icon_arrow 0 0 0;
         color: $file_icon_text_color;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
         padding: #{$file_icon_height - $file_icon_font_size * $file_icon_lh -
             $file_icon_arrow} 0.3em 0;
         font-size: $file_icon_font_size;
@@ -68,11 +63,11 @@ $file_icon_lh: 1.5;
 @mixin file-icon-color($class, $color) {
     .extension-#{$class} {
         &.file-icon {
-            &:before {
+            &::before {
                 background-color: $color;
             }
 
-            &:after {
+            &::after {
                 border-left-color: lighten($color, 20%);
             }
 
@@ -90,11 +85,11 @@ $file_icon_lh: 1.5;
             height: $height;
             padding-top: $arrow_h;
 
-            &:before {
+            &::before {
                 right: $arrow_h;
             }
 
-            &:after {
+            &::after {
                 border-top-width: $arrow_h;
                 border-left-width: $arrow_h;
             }
