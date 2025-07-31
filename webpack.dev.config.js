@@ -8,9 +8,30 @@ const output = {
     filename: '[name].js'
 };
 
+const terserOptions = {
+    format: {
+        comments: false,
+    },
+};
+
+const TerserPlugin = require('terser-webpack-plugin');
+
 const conf = {
     ...commonConfig,
     output,
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new TerserPlugin({
+                terserOptions: {
+                    format: {
+                        comments: false,
+                    },
+                },
+                extractComments: false,
+            })
+        ]
+    },
     plugins: [
         ...commonConfig.plugins,
         new MiniCssExtractPlugin({

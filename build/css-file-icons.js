@@ -1,2 +1,1 @@
-/*! For license information please see css-file-icons.js.LICENSE.txt */
 (function(){"use strict";var __webpack_modules__={"./src/js/app.js":function(){eval("{\n;// ./src/scss/main.scss\n// extracted by mini-css-extract-plugin\n\n;// ./src/js/app.js\n\n\n//# sourceURL=webpack://css-file-icons/./src/js/app.js_+_1_modules?\n}")}},__webpack_exports__={};__webpack_modules__["./src/js/app.js"]()})();

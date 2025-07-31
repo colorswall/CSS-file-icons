@@ -9,6 +9,14 @@ const output = {
     filename: '[name].js'
 };
 
+const terserOptions = {
+    format: {
+        comments: false,
+    },
+};
+
+const TerserPlugin = require('terser-webpack-plugin');
+
 const conf = Object.assign(commonConfig, {
     output,
     plugins: [
@@ -70,7 +78,14 @@ const conf = Object.assign(commonConfig, {
         concatenateModules: true,
         minimize: true,
         minimizer: [
-            '...',  // This extends existing minimizers (i.e. `terser-webpack-plugin`)
+            new TerserPlugin({
+                terserOptions: {
+                    format: {
+                        comments: false,
+                    },
+                },
+                extractComments: false,
+            }),
             new CssMinimizerPlugin({
                 minimizerOptions: {
                     preset: [
