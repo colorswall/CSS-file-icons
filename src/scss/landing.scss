@@ -4,7 +4,7 @@
 @use "config" as *;
 
 body {
-    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -17,6 +17,8 @@ h4,
 h5 {
     font-weight: 500;
     color: #212121;
+    padding: 0;
+    margin: 0.5rem 0 1.5rem;
 }
 
 .fi-list {
@@ -56,19 +58,19 @@ h5 {
 }
 
 section {
-    padding: 32px 0;
+    padding: 16px 0;
 }
 
 hr {
     border: 0;
     border-bottom: 1px solid #e7e7e7;
-    margin: 2em 0;
+    margin: 1.75em 0;
 }
 
 .code {
     &.prettyprint {
         border: 0;
-        border-left: .3rem solid #e7e7e7;
+        border-left: 0.3rem solid #e7e7e7;
         color: #655d5d;
     }
 
@@ -141,7 +143,6 @@ a {
         color: color.adjust(#157efb, $lightness: -15%);
     }
 }
-
 
 .sidebar {
     position: fixed;

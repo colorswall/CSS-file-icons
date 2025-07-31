@@ -81,9 +81,6 @@ This project exists thanks to all the people who contribute.
 ## Browsers support
 `CSS file icons` supports all modern browsers (Chrome, Firefox, Opera and Internet Exploer >= 9)
 
-## Wordpress version
-[CSS File Icons WP](https://github.com/colorswall/CSS-file-icons-wp)
-
 ## Backers
 
 Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/CSS-file-icons#backer)]
